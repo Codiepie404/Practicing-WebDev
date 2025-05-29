@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            justify-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+            background-color: peachpuff;
+            transition: transform 2s 1s, width 1s, background-color 2s;
+            /* transition: transform 3s 1s ; */
+        }
+        .box:hover{
+            transform: rotate(45deg) scale(1.5);
+            width: 300px;
+            background-color: rgb(244, 236, 89);
+        }
+        #edu, #desire, #pain{
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: change the shape. this is a css style property name.</li>
+        <li>Transition: it is a value of the transform style rule. with this you can move either x,y or both axis.</li>
+        <li>Transition: how long would it take to change the shape or color.</li>
+    </ul>
+    <div id="edu" class="box"><h3>Education</h3>
+        <p>I'm currently studying at East West University. I'm passionate about cybersecurity and working get into it.</p>
+    </div>
+    <div id="desire" class="box"><h3>Desire</h3><p>i want to go abroad in future, mostly in europe or australia, that's why i came to a private university so that i can transfer my credit to a university abroad.</p></div>
+    <div id="pain" class="box"><h3>Hindarence</h3><p>But my grandfather don't want me to go abroad, he thinks i am still a kid and can't take care of myself.</p></div>
+</body>
+</html>
